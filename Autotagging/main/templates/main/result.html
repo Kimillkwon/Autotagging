@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+{% load static %}
+<body>
+    <h1> 업로드 된 이미지들 </h1>
+ 
+    <p>
+         <button type="button" onclick="location.href='../test/' ">뒤로가기</button>
+    </p>
+	{% for obj in file_list%}
+        		<p>
+            		<img src="{% static obj %}" width="175" height="175"/>
+        		</p>
+    	{% endfor %}
+    
+</body>
+</html>
